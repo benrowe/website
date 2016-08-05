@@ -18,8 +18,8 @@ email: ben.rowe.83@gmail.com
 description: > # My name is Ben Rowe and I'm an open source web developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://benrowe.info" # the base hostname & protocol for your site
-twitter_username: jekyllrb
 github_username:  benrowe
+exclude: ['README.md']
 
 # Build settings
 markdown: kramdown
