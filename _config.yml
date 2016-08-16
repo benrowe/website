@@ -25,3 +25,7 @@ permalink: pretty
 # Build settings
 markdown: kramdown
 theme: minima
+
+collections:
+  projects:
+    output: true
