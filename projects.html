@@ -5,7 +5,7 @@ layout: default
 <ul>
   {% for project in site.projects %}
   <li>
-    <h2>{{project.title}}</h2>
+    <h2><a href="{{project.url}}">{{project.title}}</a></h2>
   </li>
   {% endfor %}
 </ul>
