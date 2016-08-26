@@ -2,3 +2,10 @@
 layout: default
 ---
 <h1>Projects</h1>
+<ul>
+  {% for project in site.projects %}
+  <li>
+    <h2>{{project.title}}</h2>
+  </li>
+  {% endfor %}
+</ul>
