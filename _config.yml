@@ -26,6 +26,9 @@ permalink: pretty
 markdown: kramdown
 theme: minima
 
+sass:
+  style: compressed
+
 collections:
   projects:
     output: true
