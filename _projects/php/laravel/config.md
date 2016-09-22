@@ -1,8 +1,10 @@
 ---
 layout: default
-description: configuration system for laravel
+description: supplementary configuration system for laravel
 ---
 
 # Config
 
-description
+The objective for the laravel-configuration package is to enable a tree
+hierarchy configuration that is persisted in a flat linear structure (such
+a database table)

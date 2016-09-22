@@ -1,6 +1,6 @@
 ---
 layout: default
-description: provides a consistent interface to format values
+description: Provides a consistent interface for manipulating values
 ---
 # Formatter
 
