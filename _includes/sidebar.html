@@ -1,0 +1,7 @@
+<h2>Sidebar</h2>
+<ul>
+    {{include.items}}
+    {% for item in include.items %}
+        <li><a href="#{{item}}">{{item}}</a></li>
+    {% endfor %}
+</ul>

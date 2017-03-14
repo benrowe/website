@@ -1,0 +1,17 @@
+---
+layout: base
+---
+{% include nav.html %}
+<div class="container main">
+
+        {% if page.sections %}
+        <div class="row">
+            <div class="col-md-2">{% include sidebar.html variable-items=page.sections %}</div>
+            <div class="col-md-10">{{content}}</div>
+        </div>
+        {% else %}
+        {% endif %}
+
+
+
+</div>
