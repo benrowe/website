@@ -1,6 +1,7 @@
 ---
 layout: project
 description: supplementary configuration system for laravel
+git_url: https://github.com/benrowe/laravel-config
 ---
 
 # Laravel Config
