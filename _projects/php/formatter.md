@@ -1,6 +1,7 @@
 ---
 layout: project
 description: Provides a consistent interface for manipulating values
+git_url: http://github.com/benrowe/formatter
 ---
 # Formatter
 
