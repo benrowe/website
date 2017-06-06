@@ -3,6 +3,7 @@ layout: project
 description: |
   Supplements the file system thats native in Laravel with url
   endpoints for those assets
+git_url: https://github.com/benrowe/laravel-filesystem-url
 ---
 
 # Filesystem URL for Laravel
