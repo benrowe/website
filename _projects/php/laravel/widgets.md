@@ -7,7 +7,7 @@ sections:
   - introduction
   - example
   - installation
-
+https://github.com/benrowe/laravel-widgets
 ---
 # Widgets
 
