@@ -37,6 +37,7 @@
 				"npm",
 				"yarn",
 				"gulp",
+				"webpack"
 				"jquery"
 			]
 		},
@@ -53,9 +54,13 @@
 		}
 	},
 	"previous_jobs": {
+		"Kounta": {
+			"job_title": "Senior Full-Stack Engineer",
+			"is_current": true
+		}
 		"Switch Media": {
 			"job_title": "Senior Software Engineer",
-			"years": 0.25
+			"years": 0.5
 		},
 		"Tomorrow Finance": {
 			"job_title": "Tech Lead",
