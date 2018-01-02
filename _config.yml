@@ -5,13 +5,13 @@ baseurl: ""
 url: "http://benrowe.info"
 
 # User settings
-username: benrowe
+username: Ben Rowe
 user_description: About me here!
 user_title: Software Developer
 email: ben.rowe.83@gmail.com
 twitter_username:
-github_username:  benrowe
-gplus_username:  benrowe
+github_username: benrowe
+gplus_username: benrowe
 
 # Google-analytics
 google-analytics:
