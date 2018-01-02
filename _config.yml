@@ -6,7 +6,12 @@ url: "http://benrowe.info"
 
 # User settings
 username: Ben Rowe
-user_description: About me here!
+user_description: >
+  I am a senior software engineer located in Sydney, Australia.
+  I contribute and use open source software.
+  I primarly focus my professional development on PHP, however I am proficient in C#, VB.NET, Javascript.
+  I've recently taken an interest in learning golang.
+
 user_title: Software Developer
 email: ben.rowe.83@gmail.com
 twitter_username:
