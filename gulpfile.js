@@ -9,7 +9,6 @@ const gulpSass         = require('gulp-sass');
 const sass             = gulpSass(require('sass'));
 const plumber          = require('gulp-plumber');
 const cp               = require('child_process');
-const imagemin         = require('gulp-imagemin');
 const bs               = require('browser-sync').create();
 
 const jekyllCommand = /^win/.test(process.platform) ? 'jekyll.bat' : 'jekyll';
@@ -43,13 +42,15 @@ function fonts() {
 		.pipe(gulp.dest('assets/fonts/'));
 }
 
-function images() {
+// gulp-imagemin@9 is ESM-only with top-level await; load it dynamically
+async function images() {
+	const { default: imagemin, gifsicle, mozjpeg, optipng } = await import('gulp-imagemin');
 	return gulp.src('src/img/**/*.{jpg,png,gif}')
 		.pipe(plumber())
 		.pipe(imagemin([
-			imagemin.mozjpeg({ progressive: true }),
-			imagemin.optipng({ optimizationLevel: 3 }),
-			imagemin.gifsicle({ interlaced: true }),
+			mozjpeg({ progressive: true }),
+			optipng({ optimizationLevel: 3 }),
+			gifsicle({ interlaced: true }),
 		]))
 		.pipe(gulp.dest('assets/img/'));
 }
