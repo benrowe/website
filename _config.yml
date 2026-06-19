@@ -1,5 +1,5 @@
 # Site settings
-title: Ben Rowe - Open Source Software Engineer - PHP, GO, JavaScript
+title: Ben Rowe - Open Source Product Engineer - PHP, GO, JavaScript
 description: Open source web developer
 baseurl: ""
 url: "http://benrowe.info"
@@ -7,7 +7,7 @@ url: "http://benrowe.info"
 # User settings
 username: Ben Rowe
 
-user_title: Software Developer
+user_title: Product Engineer
 email: ben.rowe.83@gmail.com
 twitter_username:
 github_username: benrowe
