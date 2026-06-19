@@ -53,6 +53,42 @@
   }
 }
 
+.tron-palm {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  height: 320px;
+  background: linear-gradient(0deg, $void 0%, $neon-purple 45%, $neon-magenta 100%);
+  filter: drop-shadow(0 0 10px rgba(255, 47, 208, 0.55)) drop-shadow(0 0 18px rgba(123, 47, 247, 0.4));
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 220'%3E%3Cpath d='M70 220V90c-10-8-18-4-22 4-14-6-26 4-24 18-16-4-26 10-18 24-12 2-18 16-8 24 6-14 20-20 30-14-4-14 6-26 20-22 2-12 14-18 22-10zM70 90c8-10 22-12 30-2 10-6 24 0 24 14 14-2 24 10 18 22 12 0 18 14 10 22-8-12-22-16-32-10 2-14-10-24-24-18-4-12-16-16-26-8z' fill='%23000'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 220'%3E%3Cpath d='M70 220V90c-10-8-18-4-22 4-14-6-26 4-24 18-16-4-26 10-18 24-12 2-18 16-8 24 6-14 20-20 30-14-4-14 6-26 20-22 2-12 14-18 22-10zM70 90c8-10 22-12 30-2 10-6 24 0 24 14 14-2 24 10 18 22 12 0 18 14 10 22-8-12-22-16-32-10 2-14-10-24-24-18-4-12-16-16-26-8z' fill='%23000'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: bottom;
+  mask-position: bottom;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.tron-palm--left {
+  left: 0;
+  transform: scaleX(-1);
+  @media only screen and (max-width: $cut) {
+    width: 90px;
+    height: 200px;
+  }
+}
+
+.tron-palm--right {
+  right: 0;
+  @media only screen and (max-width: $cut) {
+    width: 90px;
+    height: 200px;
+  }
+}
+
 .tron-stars {
   position: absolute;
   inset: 0;
@@ -96,11 +132,38 @@
 
 .site-title,
 .site-description {
-  color: $neon-cyan;
-  text-shadow:
-    0 0 6px rgba(0, 255, 240, 0.8),
-    0 0 16px rgba(0, 255, 240, 0.5),
-    0 0 32px rgba(123, 47, 247, 0.4);
+  background: linear-gradient(
+    180deg,
+    $chrome-light 0%,
+    $sunset-yellow 25%,
+    $sunset-orange 50%,
+    $neon-magenta 75%,
+    $neon-purple 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $neon-magenta;
+  text-shadow: none;
+}
+
+.site-title {
+  font-family: 'Audiowide', 'Montserrat', sans-serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  filter:
+    drop-shadow(0 0 10px rgba(255, 138, 61, 0.55))
+    drop-shadow(0 0 24px rgba(255, 47, 208, 0.45));
+}
+
+.site-description {
+  font-family: 'Pacifico', cursive;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  filter:
+    drop-shadow(0 0 8px rgba(0, 255, 240, 0.5))
+    drop-shadow(0 0 18px rgba(123, 47, 247, 0.4));
 }
 
 .header-icons .icon {
