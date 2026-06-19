@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }, { passive: true });
 
   function tick() {
-    currentX += (targetX - currentX) * 0.05;
-    currentY += (targetY - currentY) * 0.05;
+    currentX += (targetX - currentX) * 0.08;
+    currentY += (targetY - currentY) * 0.08;
 
-    var scrollOffset = window.scrollY * 0.05;
+    var scrollOffset = window.scrollY * 0.12;
 
     bg.style.setProperty("--px", currentX.toFixed(3));
     bg.style.setProperty("--py", (currentY + scrollOffset).toFixed(3));

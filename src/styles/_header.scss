@@ -20,26 +20,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 90vw;
+  max-width: 1800px;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
-    font-size: 50px;
     display: block;
     line-height: 1;
-    @media only screen and (min-width:$cut){
-      margin: 0;
-      font-size: 100px;
-    }
-  }
-  .site-description {
-    font-size: 20px;
-    display: block;
-    line-height: 1;
-    margin-top: 10px;
-    @media only screen and (min-width:$cut){
-      font-size: 40px;
-    }
   }
 }
 

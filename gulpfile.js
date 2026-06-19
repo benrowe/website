@@ -11,11 +11,15 @@ const plumber          = require('gulp-plumber');
 const cp               = require('child_process');
 const bs               = require('browser-sync').create();
 
-const jekyllCommand = /^win/.test(process.platform) ? 'jekyll.bat' : 'jekyll';
+const JEKYLL_IMAGE = 'benrowe-jekyll';
 
 function jekyllBuild(done) {
-	return cp.spawn(jekyllCommand, ['build'], { stdio: 'inherit' })
-		.on('close', done);
+	return cp.spawn('docker', [
+		'run', '--rm',
+		'-v', `${process.cwd()}:/site`,
+		JEKYLL_IMAGE,
+		'bundle', 'exec', 'jekyll', 'build',
+	], { stdio: 'inherit' }).on('close', done);
 }
 
 function reload(done) {

@@ -1,13 +1,18 @@
-.PHONY: install dev build sass js fonts images clean help
+.PHONY: install dev build sass js fonts images clean docker-build help
 
-GULP := npx gulp
+GULP         := npx gulp
+DOCKER_IMAGE := benrowe-jekyll
 
 help: ## Show available targets
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
 	  awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
-install: ## Install Node dependencies
+install: ## Install Node dependencies and build Jekyll Docker image
 	npm install
+	docker build -t $(DOCKER_IMAGE) .
+
+docker-build: ## (Re)build the Jekyll Docker image
+	docker build -t $(DOCKER_IMAGE) .
 
 dev: ## Build assets + serve with live reload
 	$(GULP)

@@ -3,7 +3,7 @@
   <div class="project-cards">
     {% for project in site.data.projects %}
       <div class="project-card">
-        <h3 class="project-card-name">{{ project.name }}</h3>
+        <h3 class="project-card-name">{{ project.name | replace: '-', ' ' }}</h3>
         {% if project.description %}
           <p class="project-card-desc">{{ project.description }}</p>
         {% endif %}
