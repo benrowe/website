@@ -1,8 +1,20 @@
 [
   {
     "name": "website",
-    "description": "My personal portfolio site, built with Jekyll.",
+    "description": "Personal portfolio website",
     "html_url": "https://github.com/benrowe/website",
     "private": false
+  },
+  {
+    "name": "freighter-down",
+    "description": null,
+    "html_url": "https://github.com/benrowe/freighter-down",
+    "private": true
+  },
+  {
+    "name": "claude-cowork-plugins",
+    "description": "test-claude-skill",
+    "html_url": "https://github.com/CoverGenius/claude-cowork-plugins",
+    "private": true
   }
 ]
