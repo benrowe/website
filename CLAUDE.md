@@ -5,23 +5,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-# Install dependencies
-yarn install
-
-# Build assets and serve with live reload (default dev workflow)
-gulp
-
-# Build only (no watch/browser-sync)
-gulp jekyll-build
-
-# Compile SCSS → assets/css/main.css
-gulp sass
-
-# Compile and minify JS → assets/js/main.js
-gulp js
+make install    # Install Node dependencies (yarn)
+make dev        # Build assets + serve with live reload (default dev workflow)
+make build      # Build Jekyll site once (no watch/serve)
+make sass       # Compile SCSS → assets/css/main.css
+make js         # Concatenate and minify JS → assets/js/main.js
+make fonts      # Copy fonts to assets/fonts/
+make images     # Optimise images to assets/img/
+make clean      # Remove _site/, assets/css/, assets/js/
 ```
 
-Jekyll must be installed separately (`gem install jekyll`). The Gulp workflow builds Jekyll and assets together.
+Jekyll must be installed separately (`gem install jekyll`). The build stack is Gulp 4 (CommonJS) + dart-sass; Node deps managed with npm.
+
+Gulp tasks can also be run directly: `npx gulp`, `npx gulp sass`, `npx gulp jekyll-build`, etc.
 
 ## Architecture
 
