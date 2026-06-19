@@ -23,8 +23,16 @@ jobs:
             -H "Authorization: Bearer $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/user/repos?sort=updated&visibility=all&per_page=3" \
-          | jq '.[:3] | map({name, description, html_url, private})' \
-          > _data/projects.json
+          > /tmp/repos.json
+
+          if ! jq -e 'type == "array"' /tmp/repos.json > /dev/null 2>&1; then
+            echo "::error::GitHub API did not return a repo list — check that the GH_PROJECTS_PAT secret is set and valid."
+            echo "API response was:"
+            cat /tmp/repos.json
+            exit 1
+          fi
+
+          jq '.[:3] | map({name, description, html_url, private})' /tmp/repos.json > _data/projects.json
 
       - name: Show generated file
         run: cat _data/projects.json
