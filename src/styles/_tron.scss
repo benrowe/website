@@ -23,14 +23,6 @@
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    pointer-events: none;
-    background: radial-gradient(ellipse 46% 95% at 50% 100%, transparent 88%, $void 100%);
-  }
 }
 
 .tron-grid {
@@ -39,8 +31,14 @@
   background-image: repeating-linear-gradient(to right, $grid-line 0 2px, transparent 2px 60px);
   transform: perspective(300px) rotateX(65deg);
   transform-origin: bottom center;
-  -webkit-mask-image: linear-gradient(to top, black 0%, transparent 90%);
-  mask-image: linear-gradient(to top, black 0%, transparent 90%);
+  -webkit-mask-image:
+    radial-gradient(ellipse 46% 95% at 50% 50%, black 88%, transparent 100%),
+    linear-gradient(to top, black 0%, transparent 90%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    radial-gradient(ellipse 46% 95% at 50% 50%, black 88%, transparent 100%),
+    linear-gradient(to top, black 0%, transparent 90%);
+  mask-composite: intersect;
   &::before {
     content: "";
     position: absolute;
