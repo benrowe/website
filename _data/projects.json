@@ -1,11 +1,5 @@
 [
   {
-    "name": "business-os",
-    "description": null,
-    "html_url": "https://github.com/benrowe/business-os",
-    "private": true
-  },
-  {
     "name": "freighter-down",
     "description": "A space game. A journey to...",
     "html_url": "https://github.com/benrowe/freighter-down",
@@ -16,5 +10,11 @@
     "description": "Personal portfolio website",
     "html_url": "https://github.com/benrowe/website",
     "private": false
+  },
+  {
+    "name": "business-os",
+    "description": null,
+    "html_url": "https://github.com/benrowe/business-os",
+    "private": true
   }
 ]
