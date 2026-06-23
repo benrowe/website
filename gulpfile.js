@@ -59,6 +59,12 @@ async function images() {
 		.pipe(gulp.dest('assets/img/'));
 }
 
+function imagesWebp() {
+	return gulp.src('src/img/**/*.webp')
+		.pipe(plumber())
+		.pipe(gulp.dest('assets/img/'));
+}
+
 function js() {
 	return gulp.src('src/js/**/*.js')
 		.pipe(plumber())
@@ -72,12 +78,13 @@ function watch() {
 	gulp.watch('src/js/**/*.js',                   series(js, reload));
 	gulp.watch('src/fonts/**/*.{ttf,woff,woff2}',  series(fonts, reload));
 	gulp.watch('src/img/**/*.{jpg,png,gif}',       series(images, reload));
+	gulp.watch('src/img/**/*.webp',                series(imagesWebp, reload));
 	gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html'], series(jekyllBuild, reload));
 }
 
 exports['jekyll-build'] = jekyllBuild;
 exports.sass   = compileSass;
 exports.fonts  = fonts;
-exports.images = images;
+exports.images = series(images, imagesWebp);
 exports.js     = js;
-exports.default = series(parallel(js, compileSass, fonts), jekyllBuild, serve, watch);
+exports.default = series(parallel(js, compileSass, fonts, imagesWebp), jekyllBuild, serve, watch);

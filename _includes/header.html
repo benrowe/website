@@ -4,63 +4,7 @@
   </div>
   <div class="header">
       <h1>
-        <svg class="site-title" viewBox="0 -150 2000 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{{site.username}}">
-          <title>{{site.username}}</title>
-          <defs>
-            <linearGradient id="hero-chrome" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%"   stop-color="#ffffff"/>
-              <stop offset="8%"   stop-color="#f0e0ff"/>
-              <stop offset="22%"  stop-color="#d8a8ff"/>
-              <stop offset="40%"  stop-color="#9840ee"/>
-              <stop offset="60%"  stop-color="#5818be"/>
-              <stop offset="78%"  stop-color="#340898"/>
-              <stop offset="100%" stop-color="#160040"/>
-            </linearGradient>
-            <filter id="sparkle-bloom" x="-100%" y="-100%" width="300%" height="300%">
-              <feGaussianBlur stdDeviation="2" result="blur"/>
-              <feMerge>
-                <feMergeNode in="blur"/>
-                <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-            </filter>
-            <filter id="gold-halo" x="-15%" y="-60%" width="130%" height="220%">
-              <feGaussianBlur in="SourceAlpha" stdDeviation="12" result="blur"/>
-              <feFlood flood-color="#ffd700" flood-opacity="0.55" result="color"/>
-              <feComposite in="color" in2="blur" operator="in" result="glow"/>
-              <feMerge>
-                <feMergeNode in="glow"/>
-                <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-            </filter>
-          </defs>
-          <g transform="rotate(-10, 1000, 250)">
-          <!-- 3D extrusion: 10 layers offset 1px each toward bottom-right -->
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1010" y="420" fill="#160040">{{site.username | upcase}}</text>
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1009" y="419" fill="#1e0052">{{site.username | upcase}}</text>
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1008" y="418" fill="#260064">{{site.username | upcase}}</text>
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1007" y="417" fill="#2e0076">{{site.username | upcase}}</text>
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1006" y="416" fill="#360088">{{site.username | upcase}}</text>
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1005" y="415" fill="#3e009a">{{site.username | upcase}}</text>
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1004" y="414" fill="#4608aa">{{site.username | upcase}}</text>
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1003" y="413" fill="#4e10ba">{{site.username | upcase}}</text>
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1002" y="412" fill="#5618ca">{{site.username | upcase}}</text>
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1001" y="411" fill="#5e20d0">{{site.username | upcase}}</text>
-          <!-- Chrome face -->
-          <text text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="500" letter-spacing="15" x="1000" y="410" fill="url(#hero-chrome)">{{site.username | upcase}}</text>
-          <!-- Sparkle glints -->
-          <g filter="url(#sparkle-bloom)">
-            <path transform="translate(400,55)"  d="M0,-22 L5.5,-5.5 L22,0 L5.5,5.5 L0,22 L-5.5,5.5 L-22,0 L-5.5,-5.5 Z" fill="white"/>
-            <path transform="translate(920,45)"  d="M0,-17 L4.2,-4.2 L17,0 L4.2,4.2 L0,17 L-4.2,4.2 L-17,0 L-4.2,-4.2 Z" fill="white" opacity="0.85"/>
-            <path transform="translate(1450,50)" d="M0,-19 L4.8,-4.8 L19,0 L4.8,4.8 L0,19 L-4.8,4.8 L-19,0 L-4.8,-4.8 Z" fill="white" opacity="0.9"/>
-          </g>
-          </g>
-          <!-- Product Engineer — 0° rotation, bottom 1/3 of title -->
-          <text text-anchor="middle" font-family="'Dancing Script',cursive" font-size="195" letter-spacing="3"
-            x="1000" y="470"
-            fill="#ffd700"
-            stroke="#ffe333" stroke-width="2" paint-order="stroke"
-            filter="url(#gold-halo)">{{site.user_title}}</text>
-        </svg>
+        <img class="site-title" src="{{ '/assets/img/site-title.webp' | relative_url }}" alt="{{ site.username }} - {{ site.user_title }}" title="{{ site.username }} - {{ site.user_title }}" width="1209" height="554" loading="eager" decoding="async">
       </h1>
       <div class="header-icons">
         <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon fa fa-envelope"></i></a>
