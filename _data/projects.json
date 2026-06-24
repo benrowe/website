@@ -12,9 +12,9 @@
     "private": true
   },
   {
-    "name": "claude-cowork-plugins",
-    "description": "test-claude-skill",
-    "html_url": "https://github.com/CoverGenius/claude-cowork-plugins",
-    "private": true
+    "name": "website",
+    "description": "Personal portfolio website",
+    "html_url": "https://github.com/benrowe/website",
+    "private": false
   }
 ]
