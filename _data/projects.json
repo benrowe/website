@@ -1,20 +1,20 @@
 [
   {
-    "name": "freighter-down",
-    "description": "A space game. A journey to...",
-    "html_url": "https://github.com/benrowe/freighter-down",
-    "private": true
-  },
-  {
-    "name": "business-os",
-    "description": "Business planning, ideation, and operations for Ben Rowe's side-project portfolio",
-    "html_url": "https://github.com/benrowe/business-os",
-    "private": true
+    "name": "hass-claude",
+    "description": null,
+    "html_url": "https://github.com/benrowe/hass-claude",
+    "private": false
   },
   {
     "name": "website",
     "description": "Personal portfolio website",
     "html_url": "https://github.com/benrowe/website",
     "private": false
+  },
+  {
+    "name": "freighter-down",
+    "description": "A space game. A journey to...",
+    "html_url": "https://github.com/benrowe/freighter-down",
+    "private": true
   }
 ]
