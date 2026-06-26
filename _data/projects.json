@@ -6,15 +6,15 @@
     "private": false
   },
   {
-    "name": "website",
-    "description": "Personal portfolio website",
-    "html_url": "https://github.com/benrowe/website",
-    "private": false
-  },
-  {
     "name": "freighter-down",
     "description": "A space game. A journey to...",
     "html_url": "https://github.com/benrowe/freighter-down",
     "private": true
+  },
+  {
+    "name": "website",
+    "description": "Personal portfolio website",
+    "html_url": "https://github.com/benrowe/website",
+    "private": false
   }
 ]
