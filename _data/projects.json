@@ -6,15 +6,15 @@
     "private": true
   },
   {
-    "name": "business-os",
-    "description": "Business planning, ideation, and operations for Ben Rowe's side-project portfolio",
-    "html_url": "https://github.com/benrowe/business-os",
-    "private": true
+    "name": "django-reactive",
+    "description": "Integrates react-jsonschema-form in your Django project as a form field",
+    "html_url": "https://github.com/CoverGenius/django-reactive",
+    "private": false
   },
   {
-    "name": "hass-claude",
-    "description": null,
-    "html_url": "https://github.com/benrowe/hass-claude",
+    "name": "website",
+    "description": "Personal portfolio website",
+    "html_url": "https://github.com/benrowe/website",
     "private": false
   }
 ]
