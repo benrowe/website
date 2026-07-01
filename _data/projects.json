@@ -1,20 +1,20 @@
 [
   {
+    "name": "stateflow",
+    "description": "An observable state management tool",
+    "html_url": "https://github.com/benrowe/stateflow",
+    "private": false
+  },
+  {
+    "name": "claude-cowork-plugins",
+    "description": "test-claude-skill",
+    "html_url": "https://github.com/CoverGenius/claude-cowork-plugins",
+    "private": true
+  },
+  {
     "name": "augira-game",
     "description": "A space game. A journey to...",
     "html_url": "https://github.com/benrowe/augira-game",
     "private": true
-  },
-  {
-    "name": "django-reactive",
-    "description": "Integrates react-jsonschema-form in your Django project as a form field",
-    "html_url": "https://github.com/CoverGenius/django-reactive",
-    "private": false
-  },
-  {
-    "name": "website",
-    "description": "Personal portfolio website",
-    "html_url": "https://github.com/benrowe/website",
-    "private": false
   }
 ]
