@@ -1,20 +1,20 @@
 [
   {
+    "name": "augira-game",
+    "description": "A space game. A journey to...",
+    "html_url": "https://github.com/benrowe/augira-game",
+    "private": true
+  },
+  {
     "name": "claude-cowork-plugins",
     "description": "test-claude-skill",
     "html_url": "https://github.com/CoverGenius/claude-cowork-plugins",
     "private": true
   },
   {
-    "name": "shipstation-demo",
-    "description": null,
-    "html_url": "https://github.com/CoverGenius/shipstation-demo",
-    "private": true
-  },
-  {
-    "name": "hass-claude",
-    "description": null,
-    "html_url": "https://github.com/benrowe/hass-claude",
+    "name": "website",
+    "description": "Personal portfolio website",
+    "html_url": "https://github.com/benrowe/website",
     "private": false
   }
 ]
