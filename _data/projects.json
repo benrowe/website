@@ -6,10 +6,10 @@
     "private": true
   },
   {
-    "name": "claude-cowork-plugins",
-    "description": "test-claude-skill",
-    "html_url": "https://github.com/CoverGenius/claude-cowork-plugins",
-    "private": true
+    "name": "hass-claude",
+    "description": null,
+    "html_url": "https://github.com/benrowe/hass-claude",
+    "private": false
   },
   {
     "name": "website",
