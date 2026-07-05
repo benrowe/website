@@ -1,5 +1,11 @@
 [
   {
+    "name": "website",
+    "description": "Personal portfolio website",
+    "html_url": "https://github.com/benrowe/website",
+    "private": false
+  },
+  {
     "name": "augira-game",
     "description": "A space game. A journey to...",
     "html_url": "https://github.com/benrowe/augira-game",
@@ -9,12 +15,6 @@
     "name": "hass-claude",
     "description": null,
     "html_url": "https://github.com/benrowe/hass-claude",
-    "private": false
-  },
-  {
-    "name": "website",
-    "description": "Personal portfolio website",
-    "html_url": "https://github.com/benrowe/website",
     "private": false
   }
 ]
