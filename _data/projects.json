@@ -1,14 +1,14 @@
 [
   {
-    "name": "client",
-    "description": "Async annotation and review for AI-generated content",
-    "html_url": "https://github.com/Gloss-MCP/client",
-    "private": false
-  },
-  {
     "name": "augira-game",
     "description": "A space game. A journey to...",
     "html_url": "https://github.com/benrowe/augira-game",
+    "private": true
+  },
+  {
+    "name": "claude-cowork-plugins",
+    "description": "test-claude-skill",
+    "html_url": "https://github.com/CoverGenius/claude-cowork-plugins",
     "private": true
   },
   {
