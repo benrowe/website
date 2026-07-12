@@ -6,10 +6,10 @@
     "private": true
   },
   {
-    "name": "claude-cowork-plugins",
-    "description": "test-claude-skill",
-    "html_url": "https://github.com/CoverGenius/claude-cowork-plugins",
-    "private": true
+    "name": "client",
+    "description": "Async annotation and review for AI-generated content",
+    "html_url": "https://github.com/Gloss-MCP/client",
+    "private": false
   },
   {
     "name": "website",
