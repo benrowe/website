@@ -1,15 +1,15 @@
 [
   {
-    "name": "augira-game",
-    "description": "A space game. A journey to...",
-    "html_url": "https://github.com/benrowe/augira-game",
-    "private": true
-  },
-  {
     "name": "client",
     "description": "Async annotation and review for AI-generated content",
     "html_url": "https://github.com/Gloss-MCP/client",
     "private": false
+  },
+  {
+    "name": "augira-game",
+    "description": "A space game. A journey to...",
+    "html_url": "https://github.com/benrowe/augira-game",
+    "private": true
   },
   {
     "name": "website",
