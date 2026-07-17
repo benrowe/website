@@ -1,20 +1,20 @@
 [
   {
-    "name": "hass-claude",
-    "description": null,
-    "html_url": "https://github.com/benrowe/hass-claude",
-    "private": false
-  },
-  {
-    "name": "php-vcr",
-    "description": "Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.",
-    "html_url": "https://github.com/CoverGenius/php-vcr",
-    "private": false
+    "name": "augira-game",
+    "description": "A space game. A journey to...",
+    "html_url": "https://github.com/benrowe/augira-game",
+    "private": true
   },
   {
     "name": "website",
     "description": "Personal portfolio website",
     "html_url": "https://github.com/benrowe/website",
+    "private": false
+  },
+  {
+    "name": "hass-claude",
+    "description": null,
+    "html_url": "https://github.com/benrowe/hass-claude",
     "private": false
   }
 ]
