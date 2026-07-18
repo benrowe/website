@@ -1,8 +1,8 @@
 [
   {
-    "name": "augira-game",
-    "description": "A space game. A journey to...",
-    "html_url": "https://github.com/benrowe/augira-game",
+    "name": "claude-cowork-plugins",
+    "description": "test-claude-skill",
+    "html_url": "https://github.com/CoverGenius/claude-cowork-plugins",
     "private": true
   },
   {
@@ -12,9 +12,9 @@
     "private": false
   },
   {
-    "name": "hass-claude",
-    "description": null,
-    "html_url": "https://github.com/benrowe/hass-claude",
-    "private": false
+    "name": "augira-game",
+    "description": "A space game. A journey to...",
+    "html_url": "https://github.com/benrowe/augira-game",
+    "private": true
   }
 ]
